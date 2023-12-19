@@ -22,8 +22,8 @@ public class CustomSet<T> implements Set<T> {
     }
 
     @Override
-    public Iterator iterator() {
-        return null;
+    public Iterator<T> iterator() {
+        return storage.keySet().iterator();
     }
 
     @Override
